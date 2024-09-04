@@ -1,0 +1,179 @@
+.calendar--smallPage--light{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    color: black;
+}
+.calendar--smallPage--dark{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+  background-color: #202124;
+}
+.calendar--light {
+    padding-top: 50px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+.calendar--dark{
+    padding-top: 50px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color:#202124;
+    color: whitesmoke;
+}
+.buttonLeft {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.buttonRight {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.days {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; 
+}
+
+.days li {
+    width: 14.28%; /* 100% / 7 days */
+    text-align: center;
+}
+
+.evenDay--container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+
+.day--light, .empty-day--light {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #202124;
+    height: 50px;
+    position: relative;
+    background-color: whitesmoke;
+    color: #202124;
+    border-radius: 4px;
+    padding: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.day--dark, .empty-day--dark{
+    background-color: #202124;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    height: 50px;
+    position: relative;
+    border-radius: 4px; 
+    padding: 5px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.empty-day--light {
+    background-color: whitesmoke;
+}
+
+.holyday {
+    background-color: #8fb6ff;
+    color: black;
+}
+
+.festival {
+    background-color: #bdb2ff;
+    color: whitesmoke;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: #202124;
+    color: whitesmoke;
+    border: #ccc solid 1px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the day box */
+    left: 50%;
+    margin-left: -50px;
+    height: 50px;
+    width: 100px;
+}
+
+.day--light:hover .tooltip, .day--dark:hover .tooltip  {
+    visibility: visible;
+}
+
+.today {
+    background-color: #ff6361; /* Highlight with a yellow background */
+    border: 2px solid #ff6361;    /* Add a red border */
+    border-radius: none;       /* Make it a circle, if you want */
+    color: black;             /* Set text color */
+    border-radius: 5px; /* Optional: add rounded corners */
+    padding: 5px; /* Optional: add some padding */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
+
+.today .gregorian-day {
+    font-weight: bold;        /* Make the day number bold */
+}
+.sabbath {
+    background-color: #ADD8E6; /* Light Blue, change to any of the suggested colors */
+    color: #000000; /* Optional: adjust text color for better readability */
+    border-radius: 5px; /* Optional: add rounded corners */
+    padding: 5px; /* Optional: add some padding */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
+.calenderTitle{
+    display: flex;
+    justify-content: center;
+
+}
+.calenderBody--light{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: whitesmoke;
+    color: #202124;
+}
+.calenderBody--dark{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    background-color: #202124;
+    color: whitesmoke;
+}

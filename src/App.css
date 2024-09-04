@@ -1,0 +1,339 @@
+:root {
+  --lightTheme: whitesmoke;
+  --darkTheme: #202124;
+  --cardBackground: bisque;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+body {
+  background-color: var(--darkTheme);
+}
+.navbar--container--light {
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  height: 100px;
+  width: 100%;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--lightTheme);
+}
+.headerleft--box {
+  grid-column: 1/2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar--container--light li:hover ul {
+  opacity: 1;
+  visibility: visible;
+  list-style: none;
+  display: block;
+}
+.submenu {
+  visibility: hidden;
+  opacity: 0;
+}
+.submenu li:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+}
+.nav--button {
+  grid-column: 1/2;
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.75s ease;
+}
+.nav--button:hover {
+  font-size: 45px;
+}
+.navbar--container--light > ul {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.navbar--container--dark {
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  height: 100px;
+  width: 100%;
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--darkTheme);
+}
+.navbar--container--dark > ul {
+  grid-column: 2/3;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.icon-label {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  margin-left: 70%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+.home--link--dark {
+  grid-column: 1/2;
+  justify-self: center;
+  font-size: 60px;
+  text-decoration: none;
+  color: var(--lightTheme);
+  font-family: "Times New Roman", Times, serif;
+  transition: 0.5s ease;
+}
+.home--link--light {
+  grid-column: 1/2;
+  justify-self: center;
+  font-size: 60px;
+  text-decoration: none;
+  color: var(--darkTheme);
+  font-family: "Times New Roman", Times, serif;
+  transition: 0.5s ease;
+}
+.home--link--light:hover,
+.home--link--dark:hover {
+  transform: scale(1.2);
+  transition: transform 0.75s ease;
+}
+.link--dark {
+  list-style: none;
+  text-decoration: none;
+  color: var(--lightTheme);
+}
+.link--light {
+  list-style: none;
+  text-decoration: none;
+  color: var(--darkTheme);
+}
+.navbar--container--dark > ul {
+  display: flex;
+}
+.navbar--container--dark > ul > li {
+  display: block;
+  margin: 2%;
+  font-family: "Times New Roman", Times, serif;
+  border: solid 3px transparent;
+  border-radius: 4px;
+  color: var(--lightTheme);
+}
+.navbar--container--light > ul {
+  display: flex;
+}
+.navbar--container--light > ul > li {
+  display: block;
+  margin: 2%;
+  font-family: "Times New Roman", Times, serif;
+  border: solid 3px transparent;
+  border-radius: 4px;
+}
+.navbar--container--dark > ul > li:hover {
+  background-color: #484848;
+}
+.navbar--container--light > ul > li:hover {
+  background-color: #dedede;
+}
+.homePage--light {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--lightTheme);
+  margin: 0 auto;
+  text-align: center;
+}
+.homePage--dark {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--darkTheme);
+  margin: 0 auto;
+  text-align: center;
+}
+.icon--box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-light {
+  color: black;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  transition: linear 1s ease-in-out;
+}
+.icon-dark {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  color: var(--lightTheme);
+  transition: linear 1s ease-in-out;
+}
+.icon-light:hover {
+  scale: 1.1;
+}
+.icon-dark:hover {
+  scale: 1.1;
+}
+.theName {
+  margin: 0 auto;
+  background: linear-gradient(
+    150deg,
+    #ff00c4,
+    #ff0000,
+    #ffff00,
+    #0033ff,
+    #ff00c4,
+    #800080
+  );
+  background-size: 400%;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 300;
+  letter-spacing: 10px;
+  font-size: 300px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animate 20s linear infinite;
+}
+@keyframes animate {
+  0%,
+  100% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  height: 125px;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar--container--light,
+  .navbar--container--dark,
+  .homePage--light,
+  .homePage--dark {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .home--link--light,
+  .home--link--dark {
+    font-size: 40px;
+  }
+  .navbar--container--light > ul > li,
+  .navbar--container--dark > ul > li {
+    font-size: 14px;
+  }
+  .icon-light,
+  .icon-dark {
+    height: 35px;
+    width: 35px;
+  }
+  .theName {
+    font-size: 150px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .navbar--container--light,
+  .navbar--container--dark,
+  .homePage--light,
+  .homePage--dark {
+    display: flex;
+    width: 430px;
+    padding: 24px 16px 0px 16px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .home--link--light,
+  .home--link--dark {
+    font-size: 60px;
+  }
+  .navbar--container--light > ul > li,
+  .navbar--container--dark > ul > li {
+    font-size: 30px;
+  }
+  .icon-light,
+  .icon-dark {
+    height: 40px;
+    width: 40px;
+  }
+  .theName {
+    font-size: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar--container--light,
+  .navbar--container--dark,
+  .homePage--light,
+  .homePage--dark {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .home--link--light,
+  .home--link--dark {
+    font-size: 60px;
+  }
+  .navbar--container--light > ul > li,
+  .navbar--container--dark > ul > li {
+    font-size: 30px;
+  }
+  .icon-light,
+  .icon-dark {
+    height: 40px;
+    width: 40px;
+  }
+  .theName {
+    font-size: 200px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar--container--light,
+  .navbar--container--dark,
+  .homePage--light,
+  .homePage--dark {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .home--link--light,
+  .home--link--dark {
+    font-size: 70px;
+  }
+  .navbar--container--light > ul > li,
+  .navbar--container--dark > ul > li {
+    font-size: 40px;
+  }
+  .icon-light,
+  .icon-dark {
+    height: 50px;
+    width: 50px;
+  }
+  .theName {
+    font-size: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}

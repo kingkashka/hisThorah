@@ -1,0 +1,301 @@
+.kosher--page--light {
+  --lightTheme: whitesmoke;
+  --darkTheme: #202124;
+  --cardBackground: bisque;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 2px;
+  color: var(--darkTheme);
+  background-color: var(--lightTheme);
+  font-family: "Times New Roman", Times, serif;
+}
+.kosher--page--dark {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 2px;
+  color: var(--lightTheme);
+  background-color: var(--darkTheme);
+  font-family: "Times New Roman", Times, serif;
+}
+.uncleanAnimals--page--dark {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 2px;
+  color: whitesmoke;
+  background-color: #202124;
+  font-family: "Times New Roman", Times, serif;
+}
+.uncleanAnimals--page--light {
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #202124;
+  background-color: whitesmoke;
+  font-family: "Times New Roman", Times, serif;
+}
+.kosher--header {
+  align-content: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.kosher--header > h2 {
+  font-size: 30px;
+}
+.kosher--header > h1 {
+  font-size: 45px;
+  letter-spacing: 0.5px;
+}
+.card--container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card--light {
+  position: relative;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  width: 800px;
+  margin: 10px;
+  box-shadow: 2px 2px 8px 2px #9d9ea0;
+  display: flex;
+  height: 500px;
+  max-width: 800px;
+  background-color: bisque;
+  color: black;
+  font-size: 16;
+  justify-content: center;
+  text-align: center;
+  scroll-snap-align: start;
+  cursor: pointer;
+}
+.card--dark {
+  position: relative;
+  border: 3px solid #525e75;
+  border-radius: 20px;
+  padding: 10px;
+  width: 800px;
+  margin: 10px;
+  box-shadow: 2px 2px 8px 2px #9d9ea0;
+  display: flex;
+  height: 500px;
+  max-width: 800px;
+  background-color: bisque;
+  color: #525e75;
+  font-size: 16;
+  justify-content: center;
+  text-align: center;
+  scroll-snap-align: start;
+  cursor: pointer;
+}
+
+.card--image {
+  position: absolute;
+  top: 20px;
+  justify-self: center;
+  height: 450px;
+  width: 775px;
+  max-width: 800px;
+  border-radius: 20px;
+  transition: 1s ease;
+  z-index: 1;
+}
+/* .card--light:hover .card--image, .card--dark:hover .card--image{
+    transform: translateY(-300px);
+  } */
+.slide .card--image {
+  transform: translateY(-300px);
+}
+
+.card--light p,
+.card--dark > p {
+  position: absolute;
+  font-size: .9rem;
+  top: 195px;
+  width: 700px;
+}
+.card--light h2,
+.card--dark > h2 {
+  position: absolute;
+  top: 440px;
+  font-size: 30px;
+  letter-spacing: 3px;
+  font: "Times New Roman", Times, serif;
+}
+.card--light label,
+.card--dark > label {
+  position: absolute;
+  top: 170px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  font: bold;
+  font-style: italic;
+  text-decoration-line: underline;
+}
+
+.Lilcard--light {
+  cursor: pointer;
+  border: 3px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5px;
+  height: 340px;
+  width: 200px;
+  background-color: bisque;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 8px 2px #9d9ea0;
+  font-size: 12px;
+  transition: transform 250ms ease-in-out;
+}
+.Lilcard--dark {
+  cursor: pointer;
+  border: 3px solid #525e75;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 5px;
+  height: 340px;
+  width: 200px;
+  background-color: bisque;
+  color: #525e75;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 8px 2px #9d9ea0;
+  font-size: 12px;
+  transition: transform 250ms ease-in-out;
+}
+.Lilcard--light:hover,
+.Lilcard--dark:hover {
+  z-index: 10;
+  transform: scale(1.05);
+}
+.Lilcard--light > h2,
+.Lilcard--dark h2 {
+  padding-top: 20px;
+  letter-spacing: 3px;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+.Lilcard--light > label,
+.Lilcard--dark label {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  padding-top: 6px;
+  font: bold;
+  font-style: italic;
+  text-decoration-line: underline;
+}
+.Lilcard--image {
+  border-radius: 20px;
+  height: 175px;
+  width: 200px;
+  cursor: pointer;
+  transition: all 250ms ease-out;
+}
+.lilCardContainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.creeperCardContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.animal--paragraph p {
+  margin: 0;
+  /* max-width: 80%; */
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .kosher--page--light,
+  .kosher--page--dark {
+    width: 100%;
+  }
+
+  .kosher--header > h2 {
+    font-size: 20px;
+  }
+
+  .kosher--header > h1 {
+    font-size: 24px;
+  }
+
+  .card--light,
+  .card--dark {
+    width: 300px;
+    height: 260px;
+    font-size: 14px;
+  }
+  .card--light:hover .card--image,
+  .card--dark:hover .card--image {
+    transform: translateY(-200px);
+  }
+  .card--light > img,
+  .card--dark img {
+    height: 200px;
+    max-width: 90%;
+  }
+
+  .card--light > p,
+  .card--dark p {
+    top: 34px;
+    width: 90%;
+    font-size: 8px;
+  }
+
+  .card--light > h2,
+  .card--dark h2 {
+    top: 220px;
+    font-size: 20px;
+  }
+
+  .card--light > label,
+  .card--dark label {
+    top: 20px;
+    font-size: 16px;
+  }
+
+  .Lilcard--light,
+  .Lilcard--dark {
+    width: 300px;
+    height: 300px;
+  }
+
+  .Lilcard--light > h2,
+  .Lilcard--dark h2 {
+    font-size: 20px;
+  }
+
+  .Lilcard > label,
+  .Lilcard label {
+    font-size: 16px;
+  }
+
+  .Lilcard--image {
+    height: 200px;
+    width: 100%;
+  }
+
+  .lilCardContainer {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  .animal--paragraph p {
+    max-width: 90%;
+    font-size: .60rem;
+  }
+}

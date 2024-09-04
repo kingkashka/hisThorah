@@ -1,0 +1,497 @@
+.bigLanguage--page--light{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.bigLanguage--page--dark{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background-color: #202124;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.language--header--light{
+  color: #202124;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+.language--header--light h1{
+  font-size: 45px;
+  letter-spacing: 0.5px;
+}
+.language--header--light h3{
+  font-size: 30px;
+}
+.language--header--light p{
+  font-size: 20px;
+}
+.language--header--dark{
+  color: whitesmoke;
+  background-color: #202124;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.language--header--dark h1{
+  font-size: 45px;
+  letter-spacing: 0.5px;
+}
+.language--header--dark h3{
+  font-size: 30px;
+}
+.language--header--dark p{
+  font-size: 20px;
+}
+.language--page--light{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    /* padding: 5px; */
+    background-color: whitesmoke;
+  }
+  .language--page--dark{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    /* padding: 5px; */
+    background-color: #202124;
+  }
+  .letterCard--container{
+    position: relative;
+    height: 400px;
+    width: 250px;
+    margin: 10px;
+    padding: 5px;
+  }
+  .letterCard{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+  }
+  .active{
+    transform: perspective(1000px) rotateY(180deg);
+  }
+  .letterCard--front--light{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #202124;
+    color: black;
+    background-color: #e8d8c9;
+    backface-visibility: hidden;
+    box-shadow: 4px 4px 4px 2px #9d9ea0;
+  }
+  .letterCard--front--dark{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #525e75;
+    color: #525e75;
+    background-color: bisque;
+    backface-visibility: hidden;
+  }
+  .letterCard--front--light > label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font: bold;
+    font-style: italic;
+    text-decoration-line: underline;
+    color: #202124;
+  }
+  .letterCard--front--dark > label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font: bold;
+    font-style: italic;
+    text-decoration-line: underline;
+  }
+  .letterCard--front--light > h2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #202124;
+  }
+  .letterCard--front--dark > h2{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    font-size: 80px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .letterCard--front--light > h3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 25px;
+    color: #202124;
+  }
+  .letterCard--front--dark > h3{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 25px;
+  }
+  .letterCard--back--light{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #202124;
+    color: #202124;
+    background-color: #e8d8c9;
+    height: 100%;
+    width: 100%;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 2px #9d9ea0
+  }
+  .letterCard--back--dark{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #525e75;
+    color: #525e75;
+    background-color: bisque;
+    height: 100%;
+    width: 100%;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .letterCard--back--light label{
+    font-size: 22px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30px;
+    width: 100%;
+  }
+  .letterCard--back--dark label{
+    font-size: 22px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30px;
+    width: 100%;
+  }
+  .letterCard--back--light img{
+    height: 300px;
+    width: 260px;
+    border-top: #202124 solid 3px;
+    border-bottom: #202124 solid 3px;
+  }
+  .letterCard--back--dark img{
+    height: 300px;
+    width: 260px;
+    border-top: #525e75 solid 3px;
+    border-bottom: #525e75 solid 3px;
+  }
+  .letterCard--back--light p{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  .letterCard--back--dark p{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  .letterCard--description--light{
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 250px;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .letterCard--description--dark{
+    color: whitesmoke;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 250px;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .letterCard--audio--light{
+    position: absolute;
+    bottom: 20px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: .5s ease;
+  }
+  .letterCard--audio--dark{
+    position: absolute;
+    bottom: 20px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: .5s ease;
+    color: whitesmoke;
+  }
+  .letterCard--audio--light:hover{
+    scale: 1.2;
+  }
+  .letterCard--audio--dark:hover{
+    scale: 1.2;
+  }
+  .Vowel--container{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .other-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Example style */
+}
+  .VCard--front--light{
+    height: 500px;
+    width: 300px;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e8d8c9;
+    color: black;
+    border: solid black 3px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 8px 2px #9d9ea0;
+  }
+  .VCard--front--dark{
+    height: 500px;
+    width: 300px;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #525e75;
+    background-color: bisque;
+    color: black;
+    border: solid #525e75 3px;
+    border-radius: 16px;
+    box-shadow: 1px 1px 8px 2px #9d9ea0;
+  }
+  .VCard--title--light{
+    height: 100px;
+    width: 100%;
+    border-bottom: solid 3px #202124;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .VCard--title--dark{
+    height: 100px;
+    width: 100%;
+    color: #525e75;
+    border-bottom: solid 3px #525e75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .VCard--title--light h1, .VCard--title--dark h1{
+    font-size: 75px;
+  }
+  .VCard--info--light{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .VCard--info--dark{
+    height: 300px;
+    width: 100%;
+    color: #525e75;
+    display: flex;
+    justify-content: center;
+  }
+  .VCard--info--light p, .VCard--info--dark p{
+    font-size: 16px;
+  }
+  .VCard--base--light{
+    border-top: solid #202124 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+  }
+  .VCard--base--dark{
+    border-top: solid #525e75 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+  }
+  .VCard--base--dark h3{
+    color: #525e75;
+  }
+  .hebrew--list--light{
+    color: #202124;
+    background-color: whitesmoke;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    font-size: 18px;
+  }
+  .hebrew--list--dark{
+    color: whitesmoke;
+    background-color: #202124;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 600px) {  
+    .language--header--light h1, .language--header--dark h1 {
+      font-size: 30px;
+    }
+  
+    .language--header--light h3, .language--header--dark h3 {
+      font-size: 20px;
+    }
+  
+    .language--header--light p, .language--header--dark p {
+      font-size: 14px;
+    }
+    .hebrew--list--light, .hebrew--list--dark{
+      font-size: 10px;
+    }
+    .letterCard--container {
+      height: 300px;
+      width: 200px;
+      margin: 5px;
+    }
+   
+    .letterCard--front--light > label, .letterCard--front--dark > label {
+      font-size: 18px;
+    }
+  
+    .letterCard--front--light > h2, .letterCard--front--dark > h2 {
+      font-size: 60px;
+      height: 100px
+    }
+  
+    .letterCard--front--light > h3, .letterCard--front--dark > h3 {
+      font-size: 20px;
+    }
+  
+    .letterCard--back--light img, .letterCard--back--dark img {
+      height: 200px;
+      width: 210px;
+    }
+  
+    .letterCard--back--light p, .letterCard--back--dark p {
+      font-size: 10px;
+    }
+    .Vowel--container{
+      height: 200vh;
+      flex-wrap: wrap;
+    }
+    .VCard--front--light, .VCard--front--dark{
+      height: 300px;
+      width: 200px;
+    }
+    .VCard--title--light, .VCard--title--dark{
+      height: 50px;
+    }
+    .VCard--info--light, .VCard--info--dark{
+      height: 200px;
+    }
+    .VCard--base--light, .VCard--base--dark{
+      height: 50px;
+    }
+    .VCard--info--light p, .VCard--info--dark p{
+      font-size: 10px;
+    }
+    .VCard--title--light h1, .VCard--title--dark h1{
+      font-size: 40px;
+    }
+    .letterCard--audio--light, .letterCard--audio--dark {
+      bottom: 10px;
+      height: 20px;
+      width: 20px;
+    }
+  }
+  
+  @media screen and (min-width: 602px) {
+    
+    
+  }
+
+  @media screen and (min-width: 768px){
+    
+  }
+
+  @media screen and (max-width: 992px){
+    
+  }

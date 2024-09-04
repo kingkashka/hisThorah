@@ -1,0 +1,206 @@
+.sacrifice--page--light{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #202124;
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .sacrifice--page--dark{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    background-color: #202124;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.sacrificePage--small--light{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #202124;
+    background-color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+}
+.sacrificePage--small--dark{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #202124;
+    font-family: 'Times New Roman', Times, serif;
+}
+.sacrificePage--small--light > h1{
+    font-size: 40px;
+    color: #202124;
+}
+.sacrificePage--small--dark > h1{
+    font-size: 40px;
+    color: whitesmoke;
+}
+.sacrifice--header--light{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    font-size: 18px;
+}
+.sacrifice--header--light > h1{
+    font-size: 40px;
+}
+.sacrifice--header--dark{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: whitesmoke;
+    background-color: #202124;
+    font-size: 18px;
+}
+.sacrifice--header--dark > h1{
+    font-size: 45px;
+  letter-spacing: 0.5px;
+}
+.sacrifice--paragraph--light{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    margin: 1%;
+    width: 100%;
+    font-size: 18px;
+    color: #202124;
+}
+.left--sect{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.right--sect{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items:center; */
+}
+.right--sect h1{
+    margin: 0 auto;
+}
+.list--left{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+}
+.list--left h3{
+    font-size: 20px;
+}
+.list--right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    text-align: left;
+}
+.offering--list{
+    display: flex;
+    justify-content: flex-end;
+}
+.sacrifice--paragraph--dark{
+    margin: 0 auto;
+    width: 100%;
+    font-size: 18px;
+    color: whitesmoke;
+}
+.sacrifice--paragraph--light > h2{
+    color: #202124;
+    text-decoration: underline #202124;
+}
+.sacrifice--paragraph--dark > h2{
+    color: whitesmoke;
+    text-decoration: underline whitesmoke;
+}
+.sacrifice--images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sacrifice--grainimages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.sacrifice--grainimages img{
+    height: auto;
+    width: 200px;
+    height: 400px;
+}
+.sacrifice--card--light{
+    height: 550px;
+    width: 410px;
+    color: #202124;
+}
+.sacrifice--card--light img{
+    height: 440px;
+    width: fit-content;
+    border: solid #202124 5px;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    transition: .5s ease;
+}
+.sacrifice--card--light img:hover{
+    scale: 1.1;
+}
+.sacrifice--card--dark{
+    height: 550px;
+    width: 410px;
+    color: whitesmoke;
+}
+.sacrifice--card--dark img{
+    height: 440px;
+    width: fit-content;
+    border: solid whitesmoke 5px;
+    transition: .5s ease;
+}
+.sacrifice--card--dark img:hover{
+    scale: 1.1;
+}
+
+.footNote{
+    height: 50px;
+    border: #202124 solid 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.small--header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.offering--pic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.offering--pic img{
+    height: auto;
+    width: 700px;
+}
