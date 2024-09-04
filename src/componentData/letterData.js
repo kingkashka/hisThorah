@@ -160,7 +160,7 @@ const letterData = [
     number: "90",
     original: "tzamach - צמח",
     picture:
-      "https://www.360financialliteracy.org/var/ezflow_site/storage/images/360finlit/homepage-herospace-images/sprouting-plant/3313987-1-eng-US/sprouting-plant.jpg",
+      "https://discovery.sndimg.com/content/dam/images/discovery/fullset/2021/11/16/GettyImages-1204031983.jpg.rend.hgtvcom.616.411.suffix/1637087450013.jpeg",
     description: `"צדי" (Tzadi) has no occurrences in the Bible but seems to symbolize a sprouting plant. The noun means "plant," and the verb means "to sprout." Some also suggest it resembles a fishing hook.`,
   },
   {
