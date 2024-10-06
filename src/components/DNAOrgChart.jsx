@@ -107,7 +107,7 @@ const DNAOrgChart = ({ data }) => {
     }
   }, [data, dimensions]);
 
-  return <svg className="DNAchart" ref={d3Container} />;
+  return <svg className="DNAchart w-auto col-sm-" ref={d3Container} />;
 };
 
 export default DNAOrgChart;

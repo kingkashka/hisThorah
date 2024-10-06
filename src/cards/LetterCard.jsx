@@ -15,17 +15,17 @@ function LetterCard(props) {
 
   return (
     <>
-      <div className={`letterCard--container`}>
+      <div className={`letterCard--container h-auto w-auto`}>
         <div
-          className={`letterCard ${isActive ? "active" : ""}`}
+          className={`letterCard ${isActive ? "active" : ""} h-auto w-auto`}
           onClick={flipCard}
         >
-          <div className={`letterCard--front--${context.color}`}>
+          <div className={`letterCard--front--${context.color} h-auto w-auto`}>
             <label>{label}</label>
             <h2>{title}</h2>
             <h3>{number}</h3>
           </div>
-          <div className={`letterCard--back--${context.color}`}>
+          <div className={`letterCard--back--${context.color} w-auto h-auto`}>
             <label>{original}</label>
             <img src={picture} />
             <p>{description}</p>

@@ -21,8 +21,8 @@ function LanguageSmallPage() {
   ));
   
   return (
-    <div className={`bigLanguage--page--${context.color}`}>
-      <div className={`language--page--${context.color}`}>
+    <div className={`bigLanguage--page--${context.color} h-auto w-auto`}>
+      <div className={`language--page--${context.color} h-auto w-auto`}>
         <LanguageHeader />
         {renderLetterCard}
       </div>

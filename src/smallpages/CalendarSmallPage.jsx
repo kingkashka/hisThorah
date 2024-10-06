@@ -58,7 +58,7 @@ function CalendarSmallPage() {
         <div className={`calendar--smallPage--${context.color}`}>
             <div className={`calendar--${context.color}`}>
                 <div className='calenderTitle'>
-                <h1>The Calender - לוח הימים</h1>
+                <h1>The Calender - לוח השנה</h1>
                 </div>
                 <div className="calendar-header">
                     <FaArrowLeft className='buttonLeft' onClick={subMonth} />

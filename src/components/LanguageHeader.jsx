@@ -12,7 +12,7 @@ function LanguageHeader(props) {
     />
   ));
   return (
-    <div className={`language--header--${context.color}`}>
+    <div className={`language--header--${context.color} h-auto w-auto`}>
       <h1>The Hebrew Language - השפה העברית</h1>
       <p>
         The Hebrew language holds a unique and sacred status. It stands as the
@@ -61,8 +61,8 @@ function LanguageHeader(props) {
         "waw", "yod".
       </p>
       <h1>Vowels</h1>
-      <div className="Vowel--container">{renderVowelCard}</div>
-      <div className="other-content">
+      <div className="Vowel--container h-auto w-auto">{renderVowelCard}</div>
+      <div className="other-content h-auto w-auto">
         <p>
           The use of matres lectionis became less standardized over time,
           particularly during the development of the Masoretic text, which added

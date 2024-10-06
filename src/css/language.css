@@ -224,12 +224,14 @@
   .letterCard--back--light img{
     height: 300px;
     width: 260px;
+    max-width: 260px;
     border-top: #202124 solid 3px;
     border-bottom: #202124 solid 3px;
   }
   .letterCard--back--dark img{
     height: 300px;
     width: 260px;
+    max-width: 260px;
     border-top: #525e75 solid 3px;
     border-bottom: #525e75 solid 3px;
   }
