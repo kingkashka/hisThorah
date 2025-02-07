@@ -29,12 +29,12 @@ function CalendarSmallPage() {
     const firstDayOfMonth = new Date(currentYear, month, 1).getDay();
 
     const markedDays = [
-        { month: 2, day: 20, type: 'holyday', description: 'New Year - ראש השנה' },
-        { month: 3, day: 2, type: 'holyday', description: 'Pesach - פסח' },
-        { month: 3, startDay: 3, endDay: 9, type: 'festival', description: `Chag Ha'Matzoth - חג המצות` },
-        { month: 8, day: 18, type: 'holyday', description: 'Yom Tharuah - יום תרועה' },
-        { month: 8, startDay: 26, endDay: 27, type: 'holyday', description: 'Yom Kipurim - יום כפרים' },
-        { month: 9, startDay: 2, endDay: 9, type: 'festival', description: 'Succoth - חג הסוכות' }
+        { month: 2, day: 19, type: 'holyday', description: 'New Year - ראש השנה' },
+        { month: 3, day: 1, type: 'holyday', description: 'Pesach - פסח' },
+        { month: 3, startDay: 2, endDay: 8, type: 'festival', description: `Chag Ha'Matzoth - חג המצות` },
+        { month: 8, day: 17, type: 'holyday', description: 'Yom Tharuah - יום תרועה' },
+        { month: 8, startDay: 25, endDay: 26, type: 'holyday', description: 'Yom Kipurim - יום כפרים' },
+        { month: 9, startDay: 1, endDay: 8, type: 'festival', description: 'Succoth - חג הסוכות' }
         // Add more marked days as needed
     ];
 
