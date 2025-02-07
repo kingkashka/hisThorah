@@ -85,7 +85,7 @@ function CalendarSmallPage() {
 
                         const markedDay = markedDays.find(d => d.month === month && d.day === currentDay);
                         const markedWeek = markedDays.find(d => d.month === month && d.startDay <= currentDay && d.endDay >= currentDay);
-                        const secondaryDay = secondaryDays[month] ? secondaryDays[month][currentDay] : null;
+                        // const secondaryDay = secondaryDays[month] ? secondaryDays[month][currentDay] : null;
                         
                         const isToday = new Date().getDate() === currentDay && new Date().getMonth() === month && new Date().getFullYear() === currentYear;
                         
@@ -93,7 +93,7 @@ function CalendarSmallPage() {
                             <div key={currentDay} className={`day--${context.color} ${markedDay ? markedDay.type : ''} ${markedWeek ? markedWeek.type : ''} ${isSaturday ? 'sabbath' : ''} ${isToday ? 'today' : ''}`}>
                                 <div className="day-number">
                                     <span className="gregorian-day">{currentDay}</span>
-                                    {secondaryDay && <span className="secondary-day">{secondaryDay}</span>}
+                                    {/* {secondaryDay && <span className="secondary-day">{secondaryDay}</span>} */}
                                 </div>
                                 {markedDay && <span className="tooltip">{markedDay.description}</span>}
                                 {markedWeek && <span className="tooltip">{markedWeek.description}</span>}
