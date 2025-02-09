@@ -47,7 +47,7 @@ const DNAData = {
               ],
             },
             {
-              name: "Abraham",
+              name: "Abraham - אברהם",
               mutation: "E (E-M96)",
               children: [
                 {
