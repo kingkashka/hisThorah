@@ -32,6 +32,8 @@ function CalendarSmallPage() {
         { month: 2, day: 19, type: 'holyday', description: 'New Year - ראש השנה' },
         { month: 3, day: 1, type: 'holyday', description: 'Pesach - פסח' },
         { month: 3, startDay: 2, endDay: 8, type: 'festival', description: `Chag Ha'Matzoth - חג המצות` },
+        { month: 3, day: 13, type: 'holyday', description: '1st Day Shavuoth - שבועות' },
+        { month: 5, day: 1, type: 'holyday', description: '50th Day Shavuoth - שבועות' },
         { month: 8, day: 17, type: 'holyday', description: 'Yom Tharuah - יום תרועה' },
         { month: 8, startDay: 25, endDay: 26, type: 'holyday', description: 'Yom Kipurim - יום כפרים' },
         { month: 9, startDay: 1, endDay: 8, type: 'festival', description: 'Succoth - חג הסוכות' }
