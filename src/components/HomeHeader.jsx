@@ -56,8 +56,8 @@ function HomeHeader() {
           </Link>
         </li>
         {/* <li>
-          <Link className={`link--${context.color}`} to={"/sacrifices"}>
-            Sacrifices
+          <Link className={`link--${context.color}`} to={"/theName"}>
+            The Name
           </Link>
         </li> */}
         <li>

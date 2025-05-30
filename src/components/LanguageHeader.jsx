@@ -37,7 +37,7 @@ function LanguageHeader(props) {
         revival allowed us to reclaim our linguistic roots and identity. Ladino
         is a Romance language that evolved from medieval Spanish, enriched with
         influences from Hebrew, Arabic, Turkish, and other languages. It emerged
-        among Sephardic Jewish converts who were expelled from Spain in 1492 and
+        among Sephardic Jewish converts who picked up the customs of the expelled southern kingdom Israelites from Spain in 1492 and
         subsequently settled in various regions, notably the Ottoman Empire.
         Yiddish, on the other hand, is a High German language with influences
         from Hebrew and Slavic tongues. It originated during the medieval era
