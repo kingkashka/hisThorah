@@ -36,7 +36,7 @@ const flyerCardData = [
      transliteration: `Oghrev`
     },
     { 
-     image: '/images/small images/trueOwl.JPG', 
+     image: '/images/small images/ostritch.jpg', 
      title: "בת היענה",
      label: 'The True Owl',
      transliteration: `Bath Ha-Ya'ahnah`
@@ -59,28 +59,28 @@ const flyerCardData = [
      label: 'The Osprey',
      transliteration: `Nats`
     },
+    {
+        image:'/images/small images/cormorant.jpg', 
+        title: 'שלך',
+        label: 'The Cormorant',
+        transliteration: `Shalach`
+    },
     { 
      image:'/images/small images/littleOwl.jpg', 
      title: 'כוס',
      label: 'The little Owl',
      transliteration: `Chos`
     },
-    {
-     image:'/images/small images/cormorant.jpg', 
-     title: 'שלך',
-     label: 'The Cormorant',
-     transliteration: `Shalach`
-    },
     { 
      image: '/images/small images/barnOwl.jpg', 
      title: 'ינשוף',
      label: 'The Barn Owl',
-     transliteration: `Yanshof`
+     transliteration: `Yanshuf`
     },
     {
-     image: '/images/small images/lemur.jpg', 
+     image: '/images/small images/trueOwl.JPG', 
      title: 'תנשמת',
-     label: 'The flying Lemur/Squirrel',
+     label: 'The Tru Owl',
      transliteration: `Thanashmath`
     },
     { 
